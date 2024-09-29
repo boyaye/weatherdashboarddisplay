@@ -206,7 +206,7 @@ submit.addEventListener("click", inputfunction)
 
 function init(){
 var getitem = JSON.parse(localStorage.getItem("Cityinfo"))
-console.log(getitem)
+
 if(getitem){
     for(var i =0;i < getitem.length;i++){
         var newCity = getitem[i]
