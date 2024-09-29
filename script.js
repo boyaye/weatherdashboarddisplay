@@ -47,7 +47,7 @@ function searchcityfunction(value){
       
         return respond.json()
     }).then(function(data){
-        console.log(data)
+      
         if(!data.length){
             alert("no coordinate found for"+" "+value+" "+"please enter a corrent City")
       return
@@ -57,7 +57,7 @@ function searchcityfunction(value){
         }
        
 
-        console.log(data)
+    
         
         var {lat , lon,} = data[0]
  
@@ -95,7 +95,7 @@ function fetchinglatlon(cityName , lat ,lon){
         return respond.json()
     }).then(function(data){
 
-        console.log(data)
+     
        
  var newforcastdate= [];
         var filterlist = data.list.filter(function(forecast){
@@ -185,7 +185,7 @@ function weeather_functiondisplay(cityName,newelement){
  
 }
 
-console.log(fetchinglatlon)
+
 
    
 var clearbutton = document.querySelector("#clearbutton")
