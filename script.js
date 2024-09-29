@@ -220,3 +220,21 @@ if(getitem){
     }
 }
 }
+init()
+
+
+listhook.addEventListener("click",demofunction)
+
+function demofunction(event){
+    var target = event.target
+    //if(target.tagName.include("BUTTON"))
+    if(target.matches("BUTTON")){
+       var newtarget = target.innerText
+       searchcityfunction(newtarget)
+    }
+
+    searchcity.value = "";
+    asideclass.textContent = "";
+    secondaside.textContent = "";
+    helemettag.textContent = "";
+}
