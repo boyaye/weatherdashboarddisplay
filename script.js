@@ -41,7 +41,7 @@ searchcityfunction(cityName)
 
 function searchcityfunction(value){
     
-    var API_FETCH = "http://api.openweathermap.org/geo/1.0/direct?q="+value+"&limit=1&appid="+API_KEY
+    var API_FETCH = "https://api.openweathermap.org/geo/1.0/direct?q="+value+"&limit=1&appid="+API_KEY
 
     fetch(API_FETCH).then(function(respond){
       
@@ -90,7 +90,7 @@ var button = document.createElement("button")
 function fetchinglatlon(cityName , lat ,lon){
   
     
-    var SECOND_FETCH ="http://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+lon+"&appid="+API_KEY
+    var SECOND_FETCH ="https://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+lon+"&appid="+API_KEY
     fetch(SECOND_FETCH).then(function(respond){
         return respond.json()
     }).then(function(data){
