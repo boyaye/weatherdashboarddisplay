@@ -112,7 +112,12 @@ ol{
 }
 
 
+
 #secondaside{
+    background-image: url(./newdesign.png);
+    background-repeat: no-repeat;
+    background-position:-4cap;
+    background-size: contain;
     margin-top: 15px;
     width: 96%;
     max-height: 15rem;
